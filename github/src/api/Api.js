@@ -6,7 +6,7 @@ export async function getUser(username) {
     console.log(userInfo, 'USERINFOOOO')
     return userInfo
 }
-
+ 
 export async function getRepo(username) {
     const repositories = await axios.get(`${URL_BASE}/users/${username}/repos`)
     console.log(repositories, 'REPOSITORIES')
