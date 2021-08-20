@@ -4,7 +4,7 @@ import '../styles/NavBar.css'
 const NavBar = () => (
     <nav className = "navbar navbar-expand-lg navbar-dark bg-dark">
         <img 
-            src="https://avatars.githubusercontent.com/imlidya"
+            src="https://avatars.githubusercontent.com/u/46871323?v=4"
             width="50"
             height="50" 
             className="mr-3 avatar"

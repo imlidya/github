@@ -4,7 +4,7 @@ import '../styles/UserInfo.css'
 const UserInfo = () => (
     <div className="user_info">
         <img 
-            src="https://avatars.githubusercontent.com/imlidya"
+            src="https://avatars.githubusercontent.com/u/46871323?v=4"
             className="p-2 avatar"
             width="130"
             height="130"
