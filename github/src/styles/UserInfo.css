@@ -31,3 +31,7 @@
     display: flex;
     align-items: center;
 }
+
+.user_infoDetails h5 {
+    text-align: center;
+}
