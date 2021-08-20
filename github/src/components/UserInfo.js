@@ -1,17 +1,17 @@
 import React from 'react'
 import '../styles/UserInfo.css'
 
-const UserInfo = () => (
+const UserInfo = ({user}) => (
     <div className="user_info">
         <img 
-            src="https://avatars.githubusercontent.com/u/46871323?v=4"
+            src={user.avatar_url}
             className="p-2 avatar"
             width="130"
             height="130"
             alt="profile_image"
         />
         <div className="user_infoDetails">
-            <h5>Username</h5>
+            <h5>{user.login}</h5>
             <div className="user_infos">
                 <div className="user_infoDetail">
                     <i className="fa fa-map-marker pr-1"></i>
@@ -31,11 +31,11 @@ const UserInfo = () => (
                 </div>
                 <div className="user_infoDetail">
                     <i className="fa fa-group pr-1"></i>
-                    <span>Followers ` </span>
+                    <span>{user.followers} ` </span>
                 </div>
                 <div className="user_infoDetail">
                     <i className="fa fa-heart pr-1"></i>
-                    <span>Followings ` </span>
+                    <span>{user.following} ` </span>
                 </div>
             </div>
         </div>
