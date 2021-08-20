@@ -1,9 +1,12 @@
 import React from 'react'
+import NavBar from '../components/NavBar'
+import UserInfo from '../components/UserInfo'
 
-function userPage() {
+function userPage() {   
     return (
         <div>
-            <h1>hello from userpage</h1>
+            <NavBar></NavBar>
+            <UserInfo></UserInfo>
         </div>
     )
 }
