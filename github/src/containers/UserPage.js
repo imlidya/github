@@ -7,8 +7,8 @@ import Loading  from '../components/Loading'
 import {getUser, getRepo} from '../api/Api'
 
 function UserPage({match}) {  
-    const [user, setUser] = useState()
-    const [repos, setRepos] = useState()
+    const [user, setUser] = useState([])
+    const [repos, setRepos] = useState([])
 
     const usernameParams = match.params.username
 
@@ -16,17 +16,16 @@ function UserPage({match}) {
         const {data} = await getUser(usernameParams)
         setUser(data)
     }
-
+    
     async function fetchRepo() {
         const {data} = await getRepo(usernameParams)
         setRepos(data)
     }
-
+    
     useEffect(() => {
         fetchUser()
         fetchRepo()
     }, [])
-
     return (
         <>
             {user? (
