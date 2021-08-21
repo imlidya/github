@@ -5,7 +5,11 @@ Default branch to run the app in the development mode: **main**
 
 ## Available Scripts
 
-In the project directory, you can run:
+**Project directory**
+
+### `cd github`
+
+**In the project directory, you can run:**
 
 ### `npm install`
 
