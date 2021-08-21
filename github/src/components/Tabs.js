@@ -1,19 +1,34 @@
 import React from 'react'
 import '../styles/Tabs.css'
 
-const Tabs = () => (
+const Tabs = ({ repos, user }) => (
     <ul className="nav nav-tabs">
         <li className="nav-item">
-            <p className="nav-link mb-0 active">Repositories</p>
+            <p className="nav-link mb-0 active">Repositories {repos.length}</p>
         </li>
         <li className="nav-item">
-            <a className="nav-link mb-0" href="#">Packages</a>
+            <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="nav-link mb-0"
+                href={`https://github.com/${user.login}?tab=packages`}
+            >Packages</a>
         </li>
         <li className="nav-item">
-            <a className="nav-link mb-0" href="#">People</a>
+            <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="nav-link mb-0" h
+                href={`https://github.com/orgs/${user.login}/people`}
+            >People</a>
         </li>
         <li className="nav-item">
-            <a className="nav-link mb-0" href="#">Projects</a>
+            <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="nav-link mb-0"
+                href={`https://github.com/${user.login}?tab=projects`}
+            >Projects</a>
         </li>
     </ul>
 )

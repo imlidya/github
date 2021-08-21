@@ -19,22 +19,22 @@ const UserInfo = ({user}) => (
                             <span>Location ` </span>
                         </div>
                     )}
-                    {user.blog_url && (
+                    {user.blog && (
                         <div className="user_infoDetail">
                             <i className="fa fa-globe pr-1"></i>
-                            <span>Blog Url ` </span>
+                            <span>{user.email} ` </span>
                         </div>
                     )}
                     {user.email && (
                         <div className="user_infoDetail">
                             <i className="fa fa-envelope pr-1"></i>
-                            <span>Email ` </span>
+                            <span>{user.email} ` </span>
                         </div>
                     )}
-                    {user.twitter_url && (
+                    {user.twitter_username && (
                         <div className="user_infoDetail">
                             <i className="fa fa-twitter pr-1"></i>
-                            <span>Twitter ` </span>
+                            <span>{user.twitter_username} ` </span>
                         </div>
                     )}
                     {user.followers && (
