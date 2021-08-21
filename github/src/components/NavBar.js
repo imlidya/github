@@ -11,10 +11,6 @@ const NavBar = ({user}) => (
             alt="profile"
         />
         <h3 style = {{ color: "white" }}>{user.login}</h3>
-        <a className="ms-auto" href="/" style = {{ color: "white" }}>
-            <i className="fa fa-search pr-1" style = {{ color: "white" }}></i>
-            Search
-        </a>
     </nav>
 )
 
